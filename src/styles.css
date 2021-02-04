@@ -1,0 +1,81 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.flex-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-centered {
+  align-items: center;
+}
+
+/* navigation */
+
+.logo {
+  max-width: 60px;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 8px;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #383636;
+  font-weight: 300;
+}
+
+.food-grid {
+  display: grid;
+  column-gap: 40px;
+  margin: 40px auto;
+}
+
+.food-item {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  margin: 20px auto;
+}
+
+.food-item img {
+  max-width: 100%;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+}
+
+.food-item .content {
+  padding: 15px 0px 15px 15px;
+  background-color: #faf2f2;
+}
+
+.food-item .content button {
+  outline: none;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 12px;
+  color: #ffffff;
+  background-color: #fa5252;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 640px) {
+  .food-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
